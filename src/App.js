@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter} from 'react-router-dom';
 import { useStateContext } from './contexts/ContextProvider';
 
 import Sidebar from './components/Sidebar';
@@ -12,7 +12,7 @@ const App = () => {
       <BrowserRouter>
         <div className="flex relative dark:bg-main-dark-bg">
           {activeMenu ? (
-            <div className="w-72 fixed sidebar dark:bg-secondary-dark-bg bg-white ">
+            <div className="w-72 fixed sidebar dark:bg-secondary-dark-bg dark:bg-main-bg ">
               <Sidebar />
             </div>
           ) : (

@@ -3,18 +3,18 @@ module.exports = {
     darkMode: 'class',
     theme: {
       fontFamily: {
-        display: ['Open Sans', 'sans-serif'],
-        body: ['Open Sans', 'sans-serif'],
+        display: ['Poppins', 'sans-serif'],
+        body: ['Poppins', 'sans-serif'],
       },
       extend: {
         fontSize: {
           14: '14px',
         },
         backgroundColor: {
-          'main-bg': '#FAFBFB',
+          'main-bg': '#F1F9F9',
           'main-dark-bg': '#20232A',
           'secondary-dark-bg': '#33373E',
-          'light-gray': '#F7F7F7',
+          'light-gray': '#F1F9F9',
           'half-transparent': 'rgba(0, 0, 0, 0.5)',
         },
         borderWidth: {
