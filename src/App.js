@@ -1,15 +1,14 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { FiSettings } from 'react-icons/fi';
-import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
-import { Navbar, Footer, Sidebar, ThemeSettings } from './components';
+import { Navbar, Sidebar} from './components';
+import { Dashboard } from './pages';
 import './App.css';
 
 import { useStateContext } from './contexts/ContextProvider';
 
 const App = () => {
-  const { setCurrentColor, setCurrentMode, currentMode, activeMenu, currentColor, themeSettings, setThemeSettings } = useStateContext();
+  const { setCurrentColor, setCurrentMode, currentMode, activeMenu, themeSettings } = useStateContext();
 
   useEffect(() => {
     const currentThemeColor = localStorage.getItem('colorMode');
@@ -42,6 +41,13 @@ const App = () => {
           >
             <div className="fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full ">
               <Navbar />
+            </div>
+            <div>
+              <Routes>
+                {/* dashboard  */}
+                <Route path="/" element={(<Dashboard />)} />
+                <Route path="/dashboard" element={(<Dashboard />)} />
+              </Routes>
             </div>
           </div>
         </div>
