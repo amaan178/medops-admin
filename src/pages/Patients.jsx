@@ -3,6 +3,7 @@ import { IoPersonAdd } from "react-icons/io5";
 import { BiSolidMessageSquareDetail } from "react-icons/bi";
 import { RxCross2 } from "react-icons/rx";
 import { BsInfo } from "react-icons/bs";
+import { IoSearch } from "react-icons/io5";
 import { useStateContext } from '../contexts/ContextProvider';
 
 const Patients = () => {
@@ -26,6 +27,16 @@ const Patients = () => {
               </div>
             </div>  
             <div className="inline-block min-w-full overflow-hidden">
+            <div class="w-3/4 md:w-1/2 mx-6 mt-4">
+                    <form class="flex items-center">
+                        <div class="relative w-3/4">
+                            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none text-gray-600">
+                                <IoSearch />
+                            </div>
+                            <input type="text" id="simple-search" class=" text-sm block w-full pl-10 p-2 rounded-2xl placeholder-gray-400" style={{backgroundColor: '#E6F5F5'}} placeholder="Search" required=""/>
+                        </div>
+                    </form>
+                </div>
                 <table className="table-auto w-full">
                     <thead>
                     <tr>
@@ -72,7 +83,7 @@ const Patients = () => {
                         <div className="flex items-center justify-start p-5 h-20 min-w-max border-b border-gray-100">
                             <img class="object-cover w-8 h-8 rounded-full mr-2" src="https://images.unsplash.com/photo-1531590878845-12627191e687?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt="" />
                             <div>
-                            <p className="text-sm ont-heading font-medium">Reta Havertz</p>
+                            <p className="text-sm ont-heading font-normal">Reta Havertz</p>
                             </div>
                         </div>
                         </td>
@@ -120,7 +131,7 @@ const Patients = () => {
                         <div className="flex items-center justify-start p-5 h-20 min-w-max border-b border-gray-100">
                             <img class="object-cover w-8 h-8 rounded-full mr-2" src="https://images.unsplash.com/photo-1531590878845-12627191e687?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt="" />
                             <div>
-                            <p className="text-sm ont-heading font-medium">Reta Havertz</p>
+                            <p className="text-sm ont-heading font-normal">Reta Havertz</p>
                             </div>
                         </div>
                         </td>
@@ -168,7 +179,7 @@ const Patients = () => {
                         <div className="flex items-center justify-start p-5 h-20 min-w-max border-b border-gray-100">
                             <img class="object-cover w-8 h-8 rounded-full mr-2" src="https://images.unsplash.com/photo-1531590878845-12627191e687?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt="" />
                             <div>
-                            <p className="text-sm ont-heading font-medium">Reta Havertz</p>
+                            <p className="text-sm ont-heading font-normal">Reta Havertz</p>
                             </div>
                         </div>
                         </td>
@@ -216,7 +227,7 @@ const Patients = () => {
                         <div className="flex items-center justify-start p-5 h-20 min-w-max border-b border-gray-100">
                             <img class="object-cover w-8 h-8 rounded-full mr-2" src="https://images.unsplash.com/photo-1531590878845-12627191e687?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt="" />
                             <div>
-                            <p className="text-sm ont-heading font-medium">Reta Havertz</p>
+                            <p className="text-sm ont-heading font-normal">Reta Havertz</p>
                             </div>
                         </div>
                         </td>
@@ -264,7 +275,7 @@ const Patients = () => {
                         <div className="flex items-center justify-start p-5 h-20 min-w-max border-b border-gray-100">
                             <img class="object-cover w-8 h-8 rounded-full mr-2" src="https://images.unsplash.com/photo-1531590878845-12627191e687?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt="" />
                             <div>
-                            <p className="text-sm ont-heading font-medium">Reta Havertz</p>
+                            <p className="text-sm ont-heading font-normal">Reta Havertz</p>
                             </div>
                         </div>
                         </td>
@@ -312,7 +323,7 @@ const Patients = () => {
                         <div className="flex items-center justify-start p-5 h-20 min-w-max border-b border-gray-100">
                             <img class="object-cover w-8 h-8 rounded-full mr-2" src="https://images.unsplash.com/photo-1531590878845-12627191e687?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt="" />
                             <div>
-                            <p className="text-sm ont-heading font-medium">Reta Havertz</p>
+                            <p className="text-sm ont-heading font-normal">Reta Havertz</p>
                             </div>
                         </div>
                         </td>
