@@ -4,8 +4,10 @@ import { HiMiniUsers } from "react-icons/hi2";
 import { GiMedicines } from "react-icons/gi";
 import { TbReportSearch } from "react-icons/tb";
 import { Chart } from "../components";
+import { useStateContext } from '../contexts/ContextProvider';
 
 const Dashboard = () => {
+    const { currentColor } = useStateContext();
   return (
     <div className='dashboard pr-10 pl-10'>
         <p className='text-xl font-semibold'>Dashboard</p>
@@ -312,7 +314,7 @@ const Dashboard = () => {
                                         Doctor fee pending
                                     </div>
                                 </div>
-                                <button class="flex justify-end text-sm bg-teal-500 p-3 rounded-lg text-white">
+                                <button class="flex justify-end text-sm p-3 rounded-lg text-white" style={{backgroundColor: currentColor}}>
                                     Request Fees
                                 </button>
                             </div>
@@ -332,7 +334,7 @@ const Dashboard = () => {
                                         Doctor fee pending
                                     </div>
                                 </div>
-                                <button class="flex justify-end text-sm bg-teal-500 p-3 rounded-lg text-white">
+                                <button class="flex justify-end text-sm p-3 rounded-lg text-white" style={{backgroundColor: currentColor}}>
                                     Request Fees
                                 </button>
                             </div>
@@ -352,7 +354,7 @@ const Dashboard = () => {
                                         Doctor fee pending
                                     </div>
                                 </div>
-                                <button class="flex justify-end text-sm bg-teal-500 p-3 rounded-lg text-white">
+                                <button class="flex justify-end text-sm p-3 rounded-lg text-white" style={{backgroundColor: currentColor}}>
                                     Request Fees
                                 </button>
                             </div>

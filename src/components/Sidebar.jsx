@@ -15,7 +15,7 @@ const Sidebar = () => {
         <>
           <div className="flex justify-between items-center">
             <Link to="/" className="items-center gap-2 ml-11 mt-5 flex text-2xl font-semibold tracking-tight dark:text-white">
-              <img class="" src={PrimaryBg_logo} alt='Profile'/><span className='text-teal-600'>Medops</span>
+              <img class="" src={PrimaryBg_logo} alt='Profile'/><span style={{color: currentColor}}>Medops</span>
             </Link>
           </div>
           <div className="mt-5">
