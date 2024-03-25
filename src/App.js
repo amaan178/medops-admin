@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import { Navbar, Sidebar} from './components';
-import { Dashboard, Patients } from './pages';
+import { Appointments, Dashboard, Patients } from './pages';
 import './App.css';
 
 import { useStateContext } from './contexts/ContextProvider';
@@ -48,6 +48,7 @@ const App = () => {
                 <Route path="/" element={(<Dashboard />)} />
                 <Route path="/dashboard" element={(<Dashboard />)} />
                 <Route path="/patients" element={(<Patients />)}/>
+                <Route path="/appointments" element={(<Appointments />)}/>
               </Routes>
             </div>
           </div>
